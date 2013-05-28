@@ -20,6 +20,11 @@ lib64
 
 # Installer logs
 pip-log.txt
+# Execution logs
+Invoice*.txt
+
+# Authorization File
+secrets.py
 
 # Unit test / coverage reports
 .coverage
