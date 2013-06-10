@@ -1,6 +1,5 @@
 intime
 ======
-
 A Collection of scripts to manipulate a google spreadsheet timetable
 
 Features:

@@ -1,12 +1,6 @@
 import time
 import gspread
 import argparse
-try:
-    from secrets import *
-except Exception as exc:
-    raise ImportError(
-        'Create secrets.py with username, password, and destination address!'
-    ) from exc
 parser = argparse.ArgumentParser()
 parser.add_argument('direction',
                     help='Whether to enter of exit work',
@@ -28,7 +22,7 @@ parser.add_argument('-d','--day',
                     default=time.strftime('%d/%m/%Y'))
 parser.add_argument('-s','--sheet',
                     help='Sheet name to enter information',
-                    default='Invoices')
+                    default=book)
 args = parser.parse_args()
 gc = gspread.login(args.user,args.password)
 sh = gc.open(args.sheet)
@@ -41,5 +35,4 @@ if args.direction == "entry":
 elif args.direction == "exit":
     opt = 2
 ws.update_cell(d.row, d.col+opt, args.time)
-print('Day: {} Entry: {} Exit: {} New: {}'\
-      .format(d.value, entry, exit, args.time))
+print('Day: {} Entry: {} Exit: {} New: {}'.format(d.value, entry, exit, args.time))

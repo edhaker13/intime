@@ -1,5 +1,5 @@
+
 .py[cod]
-secrets.py
 __pycache__
 
 # C extensions
@@ -19,10 +19,20 @@ develop-eggs
 .installed.cfg
 lib
 lib64
+<<<<<<< HEAD
 __pycache__
 
 # Installer logs
 pip-log.txt
+=======
+
+# Installer logs
+pip-log.txt
+# Execution logs
+Invoice*.txt
+
+# Authorization File
+secrets.py
 
 # Unit test / coverage reports
 .coverage
