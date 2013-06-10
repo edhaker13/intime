@@ -79,6 +79,7 @@ def html_table(alist,sublength, by_column=False):
     string += '</table>'
     return string
 
+<<<<<<< HEAD
 def get_table(username, password):
     # Get table data from Google Spreadsheets
     global subject, cols, to
