@@ -34,12 +34,12 @@ easy_install gspread
 ```
 
 - From github
-
-```sh
+```
 git clone https://github.com/burnash/gspread.git
 cd gspread
 python setup.py install
 ```
+
 Clone this repo and create a file called secrets.py with your details.
 ```sh
 git clone https://github.com/edhaker13/intime.git
