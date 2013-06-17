@@ -2,7 +2,8 @@ intime
 ======
 A Collection of scripts to manipulate a google spreadsheet timetable
 
-Features:
+Features
+========
 - Open a spreadsheet by it's name. (Default: Invoices)
 - Insert the time of arrival.
 - Insert the time of depature.
@@ -18,7 +19,7 @@ Requirements
 Needs Python 3+. (mostly because of the syntax)
 A readable spreadsheet in google drive.
 The gspread library which saved me when I was struggling with the weird google api.
-    You can find that here https://github.com/burnash/gspread
+    You can find that [here](https://github.com/burnash/gspread)
 
 Installing
 ==========
@@ -30,7 +31,9 @@ pip install gspread
 or
 ```
 easy_install gspread
+```
 - From github
+
 ```sh
 git clone https://github.com/burnash/gspread.git
 cd gspread
@@ -57,6 +60,7 @@ The spreadsheet should have a format similar to this:
 ![example] (https://raw.github.com/edhaker13/intime/master/example.png)
 
 The sheet should be named Month Year (Apr 13).
+
 The name of the headers or the display format is not important,
 but the entry time should be next to the date and before the exit time.
 
@@ -74,6 +78,7 @@ which does not allow passing arguments with the locale plugin.
 *clock-in* will insert the current time into entry on the correspondent date.
 *clock-out* will insert the current time into exit on the correspondent date.
 *clock-end* will retrieve the table for the whole week, format and send as a html table.
+
 _If it isn't friday the table will be sent to the sender as a test._
 
 Thanks to resources used
@@ -84,6 +89,6 @@ I was going mad reading outdated documentation from google.
 for great answers when I was looking how to make the data into a html table.
 - [SL4A](https://code.google.com/p/android-scripting/) for a way to use python
 on android without too much hassle.
-- [Llama](https://play.google.com/store/apps/details?id=com.kebab.Llama) and 
-[Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)
+- [Llama](https://play.google.com/store/apps/details?id=com.kebab.Llama)
+- [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)
 for the missing bits in automation.
