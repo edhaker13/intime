@@ -64,7 +64,7 @@ The worksheet should be named: '<Month> <Year>'; e.g. Apr 13.
 
 The name of the headers or the text format is not important,
 but the entry time should be next to the date and before the exit time.
-e.g. Date: 13/06/13,Entry: 9am, Exit: 8pm
+e.g. Date: 13/06/13, Entry: 9am, Exit: 8pm
 
 Description
 ===========
