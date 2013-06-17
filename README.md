@@ -24,11 +24,11 @@ Installing
 ==========
 You can install the gspread library with pip or through github.
 - From PyPI
-```sh
+```
 pip install gspread
 ```
 or
-```sh
+```
 easy_install gspread
 - From github
 ```sh
@@ -49,18 +49,20 @@ secrets.py
 user=<your google user> # the username for both the spreadsheet and the email.
 pwd=<your password> # Sadly gspread does not support Two-factor auth.
 book=<the workbook name> # Name of the workbook to manipulate.
-to=<the destinatary's email address> # Only needed for the email.
+to=<the destinataries email address> # Only needed for the email.
 ```
 
-The spreadsheet should have a format similar to this
+The spreadsheet should have a format similar to this:
+
 ![example] (https://raw.github.com/edhaker13/intime/master/example.png)
+
 The sheet should be named Month Year (Apr 13).
 The name of the headers or the display format is not important,
 but the entry time should be next to the date and before the exit time.
 
 Description
 ===========
-There are 4 scripts: _clock-in, clock-out, clock-end and clocking_
+There are 4 scripts: _clock-in, clock-out, clock-end_ and _clocking_
 
 The _clock-*_ scripts are stand alones that will do specific functions.
 
@@ -74,7 +76,7 @@ which does not allow passing arguments with the locale plugin.
 *clock-end* will retrieve the table for the whole week, format and send as a html table.
 _If it isn't friday the table will be sent to the sender as a test._
 
-Thanks
+Thanks to resources used
 ======
 - [Burnash](https://github.com/burnash) for an understable and easy to use API, 
 I was going mad reading outdated documentation from google.
